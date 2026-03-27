@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+  - name: raw
+    database: sales_db
+    schema: raw
+    tables:
+      - name: orders
+
+models:
+  - name: fct_revenue
+    columns:
+      - name: city
+        tests:
+          - not_null
