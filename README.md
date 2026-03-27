@@ -21,7 +21,7 @@ Raw Data → Staging → Intermediate → Mart
 * intermediate: transformations
 * marts: final business tables
 
-## 🔥 Features
+## Features
 
 * Modular SQL models using dbt
 * Dependency management using `ref()`
@@ -29,7 +29,7 @@ Raw Data → Staging → Intermediate → Mart
 * Data quality tests using dbt tests
 * Documentation using dbt docs
 
-## ▶️ How to Run
+## How to Run
 
 ```bash
 dbt debug
@@ -39,7 +39,7 @@ dbt docs generate
 dbt docs serve
 ```
 
-## 📊 Output
+## Output
 
 * Cleaned and transformed data in Snowflake
 * Final revenue table (`fct_revenue`)
