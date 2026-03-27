@@ -17,9 +17,28 @@ Raw Data → Staging → Intermediate → Mart
 
 ## Project Structure
 
-* staging: raw data cleaning
-* intermediate: transformations
-* marts: final business tables
+```
+sales_project/
+│
+├── models/
+│   ├── staging/
+│   │   └── stg_orders.sql          # Raw data extraction
+│   │
+│   ├── intermediate/
+│   │   └── int_orders_clean.sql    # Data cleaning (remove negative amounts)
+│   │
+│   ├── marts/
+│   │   ├── fct_revenue.sql         # Final revenue aggregation
+│   │   └── fct_orders_incremental.sql  # Incremental processing (optional)
+│   │
+│   └── schema.yml                  # Sources + tests
+│
+├── dbt_project.yml                # Project configuration
+├── README.md                     # Project documentation
+│
+└── (profiles.yml not included for security reasons)
+```
+
 
 ## Features
 
